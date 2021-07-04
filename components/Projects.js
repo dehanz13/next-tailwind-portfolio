@@ -5,7 +5,7 @@ import { ExternalLink } from "react-feather";
 const projects = [
   {
     key: 0,
-    title: "CrabStation",
+    title: "Crab Station & Oyster Bar",
     description:
       "A single-page-app for a seafood restaurant with online order feature.",
     tools: [
@@ -24,8 +24,9 @@ const projects = [
   },
   {
     key: 1,
-    title: "Portfolio",
-    description: "A simple, smooth, Gatsby+TailwindCSS portfolio",
+    title: "My Portfolio",
+    description:
+      "A simple, aesthetic, colorful portfolio built with GatsbyJs and Tailwind CSS.",
     tools: [
       "HTML",
       "CSS",
@@ -62,20 +63,24 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="mywork" className="w-full">
-      <h2 className="text-3xl mt-10 mb-6">Projects I've worked on</h2>
-      <div className="grid grid-flow-row grid-cols auto-rows-auto gap-10 items-center justify-start md:justify-center md:grid-cols-2 lg:grid-cols-3">
+    <div id="mywork" className="w-full container mx-auto">
+      <h2 className="text-3xl mt-10 mb-6">Projects I&lsquo;ve worked on</h2>
+      {/* <div className="grid grid-flow-row grid-cols auto-rows-auto gap-10 items-center justify-start md:justify-center md:grid-cols-2 lg:grid-cols-3"> */}
+      <div className="p-6">
         {projects.map(
           ({ key, title, description, tools, link, linkDisplay, imgUrl }) => {
             return (
-              <div key={key}>
-                <div className="relative w-full h-60 overflow-hidden">
-                  <Image src={imgUrl} layout="fill" objectFit="cover" />
-                </div>
-                <div className="mt-4">
-                  <h3 className="text-xl">{title}</h3>
-                  <p className="text-xl">{description}</p>
-                  <div className="text-bluegray flex flex-row flex-wrap mt-4 mb-2">
+              <div
+                key={key}
+                className="p-8 mb-12 md:flex mx-auto justify-between shadow-md hover:shadow-2xl bg-white rounded "
+              >
+                <div className="w-1/2 px-10">
+                  <h3 className="text-3xl font-bold my-6">{title}</h3>
+                  <p className="text-2xl mt-12">{description}</p>
+                  <p className="uppercase mt-20 mb-4 font-bold">
+                    Development Tools
+                  </p>
+                  <div className="text-bluegray flex flex-row flex-wrap mb-2">
                     {tools.map((tool, index) => {
                       return (
                         <span
@@ -87,12 +92,25 @@ const Projects = () => {
                       );
                     })}
                   </div>
-                  <a href={link} target="_blank">
-                    <span className="flex items-center justify-start text-bluegray font-bold">
-                      <ExternalLink />
-                      <span className="pl-2">{linkDisplay}</span>
-                    </span>
-                  </a>
+                  <div className="mt-20">
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      <span className="flex items-center justify-start text-bluegray font-bold">
+                        <ExternalLink />
+                        <span className="pl-2">{linkDisplay}</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="relative  overflow-hidden">
+                  <Image
+                    src={imgUrl}
+                    // layout="fill"
+                    objectFit="cover"
+                    alt="Projects"
+                    priority={true}
+                    height={800}
+                    width={1200}
+                  />
                 </div>
               </div>
             );

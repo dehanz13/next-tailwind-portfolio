@@ -14,8 +14,9 @@ h3,
 h4,
 h5,
 h6 {
+  /* @apply font-display; */
 }
-/* @apply font-display; */
+
 a {
   color: inherit;
   text-decoration: none;
@@ -35,7 +36,9 @@ a {
 .filter-grayscale {
   filter: grayscale(100%);
 }
-
+/* .container {
+  width: 50%;
+} */
 .navbar:before {
   content: "";
   position: absolute;
@@ -57,5 +60,5 @@ a {
   position: relative;
   vertical-align: middle;
   width: 100%;
+  /* @apply bg-bluegray; */
 }
-/* @apply bg-bluegray; */

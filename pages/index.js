@@ -16,14 +16,8 @@ export default function Home() {
       <div className="px-5">
         <Hero />
 
-        <h3 id="myskills" className="titleafter text-bluegray">
-          My Technical Skills
-        </h3>
         <Skills />
 
-        <h3 id="mywork" className="titleafter text-bluegray">
-          My Work
-        </h3>
         <Projects />
       </div>
 

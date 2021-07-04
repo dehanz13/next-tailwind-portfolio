@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div
       className={`w-full ${
-        navOpen ? "h-screen bg-black" : "h-20"
+        navOpen ? "h-screen bg-bluegray" : "h-20"
       } fixed z-30 navbar transition-navbar duration-700 ease-in-out overflow-hidden`}
     >
       <div className="m-auto w-full flex flex-col items-start">

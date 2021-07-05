@@ -22,6 +22,34 @@ const Footer = () => {
           <div className="font-bold">Hansel</div>
         </div>
       </div>
+      <div className="flex items-center text-center justify-center mx-auto mb-5">
+        {/* <a
+          href="https://www.buymeacoffee.com/dannielhansel"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Image
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            layout="fill"
+            objectFit="contain"
+            priority={true}
+          />
+          
+        </a> */}
+        <a
+          href="https://www.buymeacoffee.com/dannielhansel"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            style="height: 60px !important;width: 217px !important;"
+            style={{ height: "60px", width: "217px" }}
+          />
+        </a>
+      </div>
       <div className="flex flex-grow items-center justify-center">
         <a className="mr-5" href="https://github.com/dehanz13">
           <GithubIcon color="#9499a2" size={18} />

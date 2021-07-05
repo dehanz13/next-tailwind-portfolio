@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <Container>
-      <div className="px-5">
+      <div className="px-0">
         <Hero />
 
         <Skills />

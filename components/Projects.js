@@ -72,7 +72,7 @@ const Projects = () => {
             return (
               <div
                 key={key}
-                className="p-8 mb-12 md:flex mx-auto justify-between shadow-md hover:shadow-2xl bg-white rounded "
+                className="p-8 mb-12 md:flex mx-auto justify-between shadow-md hover:shadow-2xl bg-white rounded-lg "
               >
                 <div className="w-1/2 px-10">
                   <h3 className="text-3xl font-bold my-6">{title}</h3>

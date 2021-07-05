@@ -3,18 +3,19 @@ import Navbar from "../components/Navbar";
 const Container = ({ children }) => {
   return (
     <div
-      className="bg-gray-100"
+      className="flex flex-col flex-grow bg-gray-100 min-h-screen"
       // style={{
       //   gridTemplateRows: "auto 1fr auto auto",
       // }}
     >
       <Navbar />
-      <main
+      {children}
+      {/* <main
         id="skip"
         className="flex flex-col justify-center bg-gray-100 dark:bg-gray-900"
       >
         {children}
-      </main>
+      </main> */}
     </div>
   );
 };

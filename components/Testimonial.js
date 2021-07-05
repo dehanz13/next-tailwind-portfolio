@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    <div className="w-full bg-bluegray-light py-20 px-5 flex flex-col items-center justify-center flex-shrink-0 mt-10">
+    <div
+      id="testimonials"
+      className="w-full bg-bluegray-light py-20 px-5 flex flex-col items-center justify-center flex-shrink-0 mt-10"
+    >
       <p className="text-xl md:text-3xl text-center max-w-4xl">
         &ldquo;Danniel is quick to iterate on feedback and has a knack for
         understanding the genre you expect in design. I would highly recommend

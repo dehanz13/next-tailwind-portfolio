@@ -4,7 +4,7 @@ import { ArrowDown } from "react-feather";
 
 const Hero = () => {
   return (
-    <div className="bg-gray-700 flex mt-0 mb-24 w-full h-2/4">
+    <div className="bg-gray-200 flex mt-0 mb-24 w-full h-2/4">
       {/* <div className="w-full mt-28 mb-24 md:my-0 flex flex-col md:min-h-screen items-start justify-start md:justify-center container mx-auto">
         <p className="text-2xl md:text-4xl leading-10 md:leading-tight max-w-2xl">
           Hi, I&lsquo;m Danniel - a <strong>Frontend Developer</strong> and{" "}
